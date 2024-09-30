@@ -1,0 +1,80 @@
+Detected tainted HTML:
+	"\techo '<h2>Details von Infoscreen ',$infoscreen_id,' - ',$infoscreen->bezeichnung.' - ',$infoscreen->beschreibung.'</h2>';"
+	'\techo $sql_query.\' fehlgeschlagen!\'.$db->db_last_error()."\\n";'
+	"echo '<p>'.$returnmsg.'</p>';"
+	'\techo \'<table class="tablesorter">\n\t\t<thead>\n\t\t<tr>\n\t\t\t<th width="40%">Zahlung anweisen</th>\n\t\t\t<th width="60%"></th>\n\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t<tr>\n\t\t\t<td>EPS</td>\n\t\t\t<td>\n\t\t\t<a href="../../../addons/eps/cis/index.php?buchungsnummer=\'.$buchungsnr.\'"><img src="../../../skin/images/eps-logo_full.gif" width="30" height="30" alt="EPS �berweisung"></a>\n\t\t\t</td>\n\t\t</tr>\n\t\t</tbody>\n\t</table>\';'
+	'\techo "<tr><td colspan=\'2\' align=\'right\'><input type=\'submit\' name=\'submitvorschlag\' value=\'Speichern\' />".($vorschlag_id != \'\'?"<input type=\'button\' value=\'Abbrechen\' onclick=\\"document.location.href=\'$PHP_SELF?gebiet_id=$gebiet_id&amp;stg_kz=$stg_kz&amp;nummer=$nummer&amp;frage_id=$frage->frage_id\'\\" />":\'\')."</td></tr>";'
+	'                    <td><b><?php echo $lvstr; ?></b></td>'
+	'\t\t\t\t\t<input id="firma_id" name="firma_id" size="10" maxlength="30" value="<?php echo $firma_id; ?>" >&nbsp;'
+	'\t\t\t\t\techo \'<INPUT type="hidden" id="bn_funktion_ids" name="bn_funktion_ids" value="\'.implode(", ", $bn_funktion_ids).\'">\';'
+	'echo $msg;'
+	'echo "<form accept-charset=\'UTF-8\' action=\'".$_SERVER[\'PHP_SELF\']."?person_id=$person_id\' method=\'POST\' />";'
+	'echo \'<input type="hidden" name="select_studienplan_left" value="\'.$select_studienplan_left.\'">\';'
+	'\t\techo getFirmadetail($firma_id,$adresstyp_arr,$user,$neu);'
+	'\t\t\techo "<legend>Bearbeiten von ID $service_id</legend>";'
+	'\t\t\t\t\techo \'<INPUT type="button" value="Zusammenlegen" onclick="window.location.href= \\\'\'.$_SERVER[\'PHP_SELF\'].\'?type=zusammenlegung&studiengang_kz=\'.$studiengang_kz.\'&preinteressent_id=\'.$row->preinteressent_id.\'&personneu_id=\\\'+document.getElementById(\\\'person_id_\'.$row->preinteressent_id.\'\\\').value;">\';'
+	'   \t   \t\techo " Funktion $work fehlt! ";'
+	'\t\t\t\t\t\t\t\t\techo "<font color=\\"#FF0000\\">Zweitbegutachter(in) nicht gefunden. Kein Mail verschickt! ($p2id)</font><br>";'
+	'\t\techo "\\n<form method=\'POST\' enctype=\'multipart/form-data\' action=\'$PHP_SELF?gebiet_id=$gebiet_id&amp;stg_kz=$stg_kz&amp;nummer=$nummer&amp;frage_id=$frage->frage_id&amp;filter=$filter\'>";'
+	'        onload="KontaktInit(<?php echo ($kontakt_id!=\'\'?$kontakt_id:"\'\'").\',\'.($person_id!=\'\'?$person_id:"\'\'"); ?>)"'
+	"\t\t\t\t\t\techo '<lv>\n\t\t\t\t\t\t\t\t<lehrform_kurzbz></lehrform_kurzbz>\n\t\t\t\t\t\t\t\t<benotungsdatum>'.$benotungsdatum_outgoing.'</benotungsdatum>\n\t\t\t\t\t\t\t\t<sws>'.$sws.'</sws>\n\t\t\t\t\t\t\t\t<sws_lv>'.$sws_lv.'</sws_lv>\n\t\t\t\t\t\t\t\t<semester></semester>\n\t\t\t\t\t\t\t\t<kurzbz>'.$lehrform_kurzbz_outgoing.'</kurzbz>\n\t\t\t\t\t\t\t\t<stsem></stsem>\n\t\t\t\t\t\t\t\t<bezeichnung><![CDATA[]]></bezeichnung>\n\t\t\t\t\t\t\t\t<bezeichnung_englisch><![CDATA[International Semester Abroad: '.$datum_von.'-'.$datum_bis.', at '.$row_outgoing->ort.', '.$row_outgoing->universitaet.'. All credits earned during the International Semester Abroad (ISA) are fully credited for the '.$start.$auslandssemester_start.' semester at the UAS Technikum Wien. '.$projektarbeitszusatz.']]></bezeichnung_englisch>\n\t\t\t\t\t\t\t\t<ects>'.$row_outgoing->ects.'</ects>\n\t\t\t\t\t\t\t\t<semesterstunden>'.$row_outgoing->semesterstunden.'</semesterstunden>\n\t\t\t\t\t\t\t\t<note>'.$note_outgoing.'</note>\n\t\t\t\t\t\t\t\t<note_positiv>'.$note_positiv_outgoing.'</note_positiv>\n\t\t\t\t\t\t\t\t<lv_id></lv_id>\n\t\t\t\t\t\t\t</lv>';"
+	'echo " Beginn <INPUT class=\'datepicker_datum\' type=\'text\' size=\'10\' id=\'beginn\' name=\'beginn\' value=\'$beginn\'>";'
+	'\t\t\t\techo "<script>window.location.href=\'".$_SERVER[\'PHP_SELF\']."?uid=$copyTo\'</script>";'
+	'\tvon <input type="text" id="von" name="von" value="<?php echo $von; ?>" />'
+Detected tainted text with possible quotes:
+	'\t\t\t\t\t\t\t   echo \'<option value="upload.php?course_id=\'.$course_id.\'&term_id=\'.$term_id.\'&short=\'.$row_lesson->kuerzel.\'" selected>\'.$row_lesson->bezeichnung.\'</option>\';'
+	'\t\t\t\t\t\t\t\t\t<input style="display:none" id="besteller" name="besteller" value="<?php echo $besteller;?>">'
+	'\t\techo \'\n\t\t\t\t<input type="hidden" name="kategorie_kurzbz" id="kategorie_kurzbz" value="\'.$kategorie_kurzbz.\'">\n\t\t\t\t<input type="hidden" name="dms_id" id="dms_id" value="">\n\t\t\t\t<table>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Beschreibung</td>\n\t\t\t\t\t<td><textarea name="beschreibung" id="beschreibung-textarea" rows="1" cols="80" style="font-size: small;"></textarea></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Schlagworte<br/>(Semikolon getrennt)</td>\n\t\t\t\t\t<td><textarea name="schlagworte" id="schlagworte-textarea" rows="2" cols="80" style="font-size: small;"></textarea></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Mimetype</td>\n\t\t\t\t\t<td><input type="text" name="mimetype" id="mimetype-input" size="50" maxlength="256" style="font-size: small;" /></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>CIS-Suche</td>\n\t\t\t\t\t<td><input type="checkbox" id="cis_suche_checkbox" name="cis_suche"></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td><input type="file" name="userfile"></td>\n\t\t\t\t</tr>\n\t\t\t\t</table>\n\t\t\t\t<input type="hidden" name="projekt_kurzbz" value="\'.$projekt_kurzbz.\'">\n\t\t\t\t<input type="hidden" name="projektphase_id" value="\'.$projektphase_id.\'">\n\t\t\t\t<input type="submit" class="buttondesign" name="fileupload" value="Upload">\n\t\t\t\t</form>\n\t\t\t\t<br>\';'
+	'\t\t\t\t<td class="ac_submit"><a href="javascript:document.sendform.submit();"><img src="../../skin/images/application_go.png" alt="suchen" />&nbsp;suchen</a>&nbsp;<input style="display:none;" name="debug" value="<?php echo $debug;?>"></td>'
+	'\techo \'</tbody><tfoot><tr>\n\t\t\t<form action="\'.$_SERVER[\'PHP_SELF\'].\'?stg_kz=\'.$stg_kz.\'&action=save" method="POST">\n\t\t\t<input type="hidden" name="stg_kz" value="\'.$stg_kz.\'" />\n\t\t\t<td>\n\t\t\t\t<SELECT name="gebiet_id">\';'
+	'\t<form action="<?php echo $_SERVER[\'PHP_SELF\'].\'?action=\'.$action; ?>" method="post">'
+	"\techo ' ( '.$importort.' )';"
+	'\t\t\t\t\t<input type="hidden" name="termin_id" value="<?php echo $termin_id ?>">'
+	"\t\t\t\techo 'Fehler beim Laden von ID:'.$id;"
+	'\t\techo \' Gebiet:<select onchange="window.location.href=\\\'\'.$PHP_SELF.\'?stg_kz=\'.$stg_kz.\'&amp;gebiet_id=\\\'+this.value;">\';'
+	'                    <td><?php echo $vonzeit ?> Uhr</td>'
+	'\t\t\t\t\techo \'<br><input type="radio" disabled="true" value="\'.$lvid.\'" name="lv" /><span class="ok">\'.$lv->bezeichnung.\'</span><img src="../../../skin/images/information.png" title="\'.$p->t(\'studienplan/bereitsAngemeldet\').\'"/>\';'
+	'echo "<studiengang_bezeichnung>".$studiengang->bezeichnung."</studiengang_bezeichnung>";'
+	'echo $htmlstr;'
+	'\t\t\t\t\t\t<input class="ausblenden" name="start" type="text" value="<?php echo $veranstaltung[\'start_timestamp\']=trim((isset($veranstaltung[\'start_timestamp\'])?$veranstaltung[\'start_timestamp\']:mktime(8,0,0,date("m"),date("d"),date("y")))) ;?>" >'
+	'\t\t\t\t\t<input id="kostenstelle_id" name="kostenstelle_id" size="5" maxlength="10" value="<?php echo $kostenstelle_id; ?>" >&nbsp;'
+	'echo \'<tr><td>SVNR</td><td><input type="text" id="svnr" size="10" maxlength="10" name="svnr" value="\'.$svnr.\'" onblur="GeburtsdatumEintragen()" /></td></tr>\';'
+	'\t\techo "<li id=\'node_".$studiengang_kz.$sem.$s["aktiv"]."\'>\n\t\t\t\t\t<a href=\'javascript:void(0);\' onclick=\'changeState(\\"pic_".$studiengang_kz.$sem.$s["aktiv"]."\\",$studiengang_kz,\\"" . $sem . "\\",\\" \\",\\" \\",\\"" .$s["aktiv"]. "\\")\'>\n\t\t\t\t\t\t<img id=\'pic_".$studiengang_kz.$sem.$s["aktiv"]."\' src=\'../../skin/images/" . ($s["aktiv"] == \'t\' ? \'true.png\' : \'false.png\') . "\' aktiv=\'".$s["aktiv"]."\' height=\'20\'>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a name=\'$studiengang_kz$sem\' href=\'javascript:void(0);\' onclick=\'getGruppenDetails(\\"edit\\",\\"\\",$studiengang_kz,\\"" . $sem . "\\",\\" \\",\\" \\",\\"".$s["aktiv"]."\\")\'>\n\t\t\t\t\t\tSemester " . $s["semester"] . "\n\t\t\t\t\t</a>";'
+	'\t\t\t\t\t\t\tdata: "ajax=set_position" + "&debug=<?php echo $debug;?>"  + "&betriebsmittel_id=" + betriebsmittel_id + "&inventarnummer=" + inventarnummer + "&bestellung_id=" + bestellung_id + "&bestelldetail_id=" + bestelldetail_id ,'
+	'\techo \'<tr><td>Wahlnahme</td><td><input type="text" maxlength="32" size="30" id="wahlname" name="wahlname" value="\'.$wahlname.\'" />\';'
+	'echo \'<tr><td>Ersatzkennzeichen</td><td><input type="text" id="ersatzkennzeichen" size="10" maxlength="10" name="ersatzkennzeichen" value="\'.$ersatzkennzeichen.\'" /></td></tr>\';'
+	'\t\t\t\techo \'<span class="error">Benutzer \'.$design_uid.\' ist nicht vorhanden</span>\';'
+	'\t\t\t\t\t</label>&nbsp;<input id="bestellung_id" name="bestellung_id" size="10" maxlength="30" type="Text" value="<?php echo $bestellung_id; ?>" >&nbsp;'
+	'\t\t\techo "<script language=\'Javascript\'>\n\t\t\t\t\tparent.preinteressent_detail.location.href = \\"preinteressent_detail.php?id=".$_GET[\'id\']."&selection=\\"+parent.preinteressent_detail.selection; \n\t\t\t\t </script>";'
+	'echo \'<form action="\'.$_SERVER[\'PHP_SELF\'].\'?geschaeftsjahr_kurzbz=\'.$geschaeftsjahr_kurzbz.\'" method="POST">\';'
+	'echo \'<tr><td>Mobil</td><td><input type="text" id="mobil" maxlength="128" name="mobil" value="\'.$mobil.\'" /></td></tr>\';'
+Detected tainted file handling:
+	"$dateiausgabe=fopen($eee,'w');"
+	"$fp = fopen(APP_ROOT.'cis/public/freebusy_lvplan.php/'.$uid,'r');"
+	'\t\tif (! unlink(IMPORT_PATH.$importFile))'
+	'\treadfile($filename);'
+	"$fp = fopen(APP_ROOT.'cis/public/freebusy_zeitsperren.php/'.$uid,'r');"
+	'\t\t\t\tunlink($finishedPdf);'
+	"$dateiausgabe=fopen($dddNurBew,'w');"
+	"$dateiausgabe=fopen($ddd,'w');"
+	"\t\t\t\tfile_put_contents('bestof/'.$person_id.'.jpg',base64_decode($row->inhalt));"
+	'\techo readfile($filename);'
+	"\t\t\t\tif(!$handle = fopen($finishedPdf,'r'))"
+	"            $handle = fopen($tempPdfName,'r');"
+	"\treadfile ($path.'skin/styles/'.$stylesheet.'.css');"
+	"\t$fp = @fopen($url,'r');"
+	'\treadfile($filename);'
+	"$dateiausgabe=fopen($ddd,'w');"
+Detected tainted header:
+Detected tainted network request:
+Detected tainted text:
+	'if(!$error && ($return = call_user_func_array(array($obj, $method), $parameter)))'
+	"\t\tif(!call_user_func_array(array($obj, $loaddata['method']), $loadparameter))"
+	'$obj = new $class();'
+Detected tainted shell code:
+	'            exec("unoconv -e IsSkipEmptyPages=false --stdout -f pdf $tempname_zip > $tempPdfName");'
+	'\texec($command, $output, $retval);'
+	'\t\t\t\t\t\texec(\'chmod 640 "\'.PAABGABE_PATH.$paabgabe_id.\'_\'.$uid.\'.pdf\'.\'"\');'
+Detected tainted cookie:
+Detected tainted code passed to include or similar:
+Detected tainted SQL:

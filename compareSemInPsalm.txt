@@ -1,0 +1,63 @@
+echoed-request:
+	'echo \'<tr><td>Vorname</td><td><input type="text" id="vorname" maxlength="32" name="vorname" value="\'.$vorname.\'" /></td></tr>\';'
+	'\t\t\t\t\t\t<input type="Text" value="<?php echo (!isset($veranstaltung[\'insertamum_timestamp\']) || empty($veranstaltung[\'insertamum_timestamp\'])?time():$veranstaltung[\'insertamum_timestamp\'] ); ?>" name="insertamum" >'
+	'\t\t$( "#tabs" ).tabs( "option", "selected", <?php echo $tabselect;?> );'
+	'\t\t\t\techo "<a href=\'$PHP_SELF?gebiet_id=$gebiet_id&amp;stg_kz=$stg_kz&amp;nummer=$row->nummer&amp;frage_id=$row->frage_id\' class=\'Item\'><u>$row->frage_id</u></a> -";'
+	'\t\techo "<td>$ma->nachname $ma->vorname</td>";'
+	'\t\techo \'&searching=true&searchstring=\'.$searchstring.\'" method="POST" style="float:left"><input type="submit" class="buttondesign" name="100weiter" value="100 weiter" style="margin-left:2px"/><input type="hidden" name="searchstring" id="searchstring" value="\'.$searchstring.\'" /></form>\';'
+	'echo \'<tr><td>Titel(Post)</td><td><input type="text" id="titelpost" name="titelpost" maxlength="64" value="\'.$titelpost.\'" /></td></tr>\';'
+	'                        <a href=\'#\' onclick=\'terminLoeschenOhneLaden("<?php echo $pruefung_id ?>", "<?php echo $termin_id ?>");\'>'
+	'\t\t\t\t\t\t<input id="ort_kurzbz" name="ort_kurzbz" size="16" maxlength="40" value="<?php echo $ort_kurzbz;?>">&nbsp;'
+	'\t\t\t\techo "<a href=\'$PHP_SELF?gebiet_id=$gebiet_id&amp;stg_kz=$stg_kz&amp;nummer=$row->nummer&amp;frage_id=$row->frage_id\' class=\'Item\'>$row->frage_id</a> -";'
+	'\t\t\techo " <a href=\'$PHP_SELF?gebiet_id=$gebiet_id&amp;frage_id=$nextfrage\' class=\'Item\'>$value</a>";'
+	'\techo \'\n    <INPUT type="hidden" name="kurzbz" value="\' . $kurzbz . \'">\n    <table>\n\t<tr>\n    \t<td>Lektor: </td>\n    \t<td> \';'
+	'\techo $htmlstr;'
+	'\t\t\techo \'<meta http-equiv="refresh" content="0; url=\'.$_SERVER[\'PHP_SELF\'].\'?kategorie_kurzbz=\'.$_REQUEST[\'kategorie_kurzbz\'].\'&page=\'.$page.\'&dpp=\'.$dpp.\'" />\';'
+	'echo \'<tr><td>Mobil</td><td><input type="text" id="mobil" maxlength="128" size="30" name="mobil" value="\'.$mobil.\'" /></td></tr>\';'
+	'\t\techo \'<tr>\n\t\t\t\t<td>\'.$gebiet->bezeichnung.\' (\'.$gebiet->kurzbz.\')</td>\n\t\t\t\t<td>\'.$row->reihung.\'</td>\n\t\t\t\t<td>\'.$row->gewicht.\'</td>\n\t\t\t\t<td>\'.$row->semester.\'</td>\n\t\t\t\t<td>\'.$studienplan->bezeichnung.\'</td>\n\t\t\t\t<td>\'.$row->sprache.\'</td>\n\t\t\t\t<td>\'.($row->sprachwahl != \'\'?($row->sprachwahl?\'Ja\':\'Nein\'):\'-\').\'</td>\n\t\t\t\t<td><a href="\'.APP_ROOT.\'cms/admin.php?content_id=\'.$row->content_id.\'&action=content&filter=\'.$row->content_id.\'" target="_blank">\'.$row->content_id.\'</a></td>\n\t\t\t\t<td>\n\t\t\t\t\t<form action="\'.$_SERVER[\'PHP_SELF\'].\'?stg_kz=\'.$stg_kz.\'&action=edit"   method="POST" style="float:left" id="fe\'.$row->ablauf_id.\'"><a onclick="document.getElementById(\\\'fe\'.$row->ablauf_id.\'\\\').submit();">edit</a>\n\t\t\t\t\t\t<input type="hidden" name="ablauf_id" value="\'.$row->ablauf_id.\'" />\n\t\t\t\t\t</form>\n\t\t\t\t\t<form action="\'.$_SERVER[\'PHP_SELF\'].\'?stg_kz=\'.$stg_kz.\'&action=delete" method="POST" style="float:left; margin-left:5px;" id="fd\'.$row->ablauf_id.\'"><a onclick="if (confirm(\\\'Gebietszuteilung entfernen?\\\')) document.getElementById(\\\'fd\'.$row->ablauf_id.\'\\\').submit();">delete</a>\n\t\t\t\t\t\t<input type="hidden" name="ablauf_id" value="\'.$row->ablauf_id.\'" />\n\t\t\t\t\t\t<input type="hidden" name="ablauf_vorgaben_id" value="\'.$ablauf_vorgaben_id.\'" />\n\t\t\t\t\t</form>\n\t\t\t\t</td>\n\t\t\t</tr>\';'
+	'\t onload="loadBetriebsmittel(<?php echo $person_id.",\'".$uid."\'"; ?>);"\r'
+	'\t\techo \'<tr><td>Bezeichnung</td><td><input type="text" name="bezeichnung" value="\'.$bezeichnung.\'" size="68" maxlength="64"></td></tr>\';'
+	'echo \'<input type="hidden" name="select_lehrtyp_right" value="\'.$select_lehrtyp_right.\'">\';'
+	'\t\t\t\t<td><input type="text" name="vonzeit" value="<?php echo $vonzeit ?>" maxlength="5"></td>'
+	'    <input type="text" name="lehreinheit_id" size="6" maxlength="10" value="<?php echo $lehreinheit_id; ?>"><br/>'
+	'\techo "<form action=\\"$PHP_SELF?gebiet_id=$gebiet_id&amp;frage_id=$frage->frage_id\\" method=\\"POST\\" ".(!$letzte && !$levelgebiet?"onsubmit=\\"letzteFrage()\\"":"").">";'
+	'    echo "<OPTION value=\'notenliste.php?stsem=alle".$getParam."\'>".$p->t(\'news/allesemester\')."</OPTION>";'
+	'\t\techo getFirmadetail($firma_id,$adresstyp_arr,$user,$neu);'
+	'\t\t\techo "\t</td>\n\t\t\t\t\t<td><a href=\'$PHP_SELF?gebiet_id=$gebiet_id&amp;stg_kz=$stg_kz&amp;nummer=$nummer&amp;frage_id=$frage->frage_id&amp;vorschlag_id=$vs->vorschlag_id\'>edit</a></td>\n\t\t\t\t\t<td><a href=\'$PHP_SELF?gebiet_id=$gebiet_id&amp;stg_kz=$stg_kz&amp;nummer=$nummer&amp;frage_id=$frage->frage_id&amp;vorschlag_id=$vs->vorschlag_id&amp;type=delete\' onclick=\\"return confirm(\'Wollen Sie diesen Eintrag wirklich loeschen?\')\\">delete</a></td>\n\t\t\t\t\t<td align=\'center\'><input type=\'checkbox\' name=\'vorschlagaktiv[]\' value=\'".$vs->vorschlag_id."\' ";'
+tainted-sql-string:
+	'\t\t\techo "<td class=\'table-sortable:default\' align=\'center\'><a href=\'".$_SERVER[\'PHP_SELF\']."?datum=$datum&stunde=$stunde&type=delete&id=".$row->$id."\' onclick=\'return confirm(\\"Diesen Datensatz wirklich loeschen?\\")\'>delete</a></td>";'
+	'echo \'\t</SELECT></td>\n\t\t<td>Sprachwahl: </td><td><SELECT name="sprachwahl"><OPTION value="true">Ja</OPTION><OPTION value="false">Nein</OPTION></SELECT></td>\n\t\t<td>Content_id: </td><td><input type="text" name="content_id" value=""/></td></tr>\n\t\t<tr><td colspan="3"><input type="submit" value="Speichern"/><a href="\'.$_SERVER[\'PHP_SELF\'].\'?stg_kz=\'.$stg_kz.\'"><input type="button" value="Abbrechen"></a></td></tr>\n\t\t<input type="hidden" name="saveAblaufVorgabe" value="new">\n\t  </form></table></div>\';'
+tainted-filename:
+	'\treadfile($filename);'
+	'\treadfile($filename);'
+	"\t$fp = @fopen($url,'r');"
+	'\t\treadfile($filename);'
+	"$fp = fopen(APP_ROOT.'cis/public/freebusy_lvplan.php/'.$uid,'r');"
+	"$fp = fopen(APP_ROOT.'cis/public/freebusy_zeitsperren.php/'.$uid,'r');"
+	'\t\tif (! unlink(IMPORT_PATH.$importFile))'
+	"\t\t\t\tif(!$handle = fopen($finishedPdf,'r'))"
+	'\t\t\t\tunlink($finishedPdf);'
+	"            $handle = fopen($tempPdfName,'r');"
+	"\treadfile ($path.'skin/styles/'.$stylesheet.'.css');"
+	"\t$dateiausgabe=fopen($ddd,'w');"
+	"$dateiausgabe=fopen($dddNurBew,'w');"
+	"$dateiausgabe=fopen($eee,'w');"
+	"\t\t\t\tfile_put_contents('bestof/'.$person_id.'.jpg',base64_decode($row->inhalt));"
+	'\techo readfile($filename);'
+curl-ssl-verifypeer-off:
+tainted-callable:
+	"\t\tif(!call_user_func_array(array($obj, $loaddata['method']), $loadparameter))"
+	'if(!$error && ($return = call_user_func_array(array($obj, $method), $parameter)))'
+	"\t\tif(!call_user_func_array(array($obj, $loaddata['method']), $loadparameter))"
+	'if(!$error && ($return = call_user_func_array(array($obj, $method), $parameter)))'
+tainted-exec:
+	'\t\t\t\t\t\texec(\'chmod 640 "\'.PAABGABE_PATH.$paabgabe_id.\'_\'.$uid.\'.pdf\'.\'"\');'
+	'\texec($command, $output, $retval);'
+	'            exec("unoconv -e IsSkipEmptyPages=false --stdout -f pdf $tempname_zip > $tempPdfName");'
+tainted-url-host:
+	'\t\t\techo \'<br>ID: <a href="id://\'.$dms->dms_id.\'/Auswahl" onclick="FileBrowserDialog.mySubmit(\'.$dms->dms_id.\'); return false;" style="font-size: small" title="\'.$dms->beschreibung.\'">\n\t\t\t\t\'.$dms->dms_id.\'</a><br><br>\';'
+tainted-object-instantiation:
+	'$obj = new $class();'
+	'$obj = new $class();'
+redirect-to-request-uri:
+phpinfo-use:
